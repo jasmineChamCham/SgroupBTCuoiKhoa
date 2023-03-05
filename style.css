@@ -211,14 +211,19 @@ body{
 
 .task-caption{
     font-weight: bold;
+    color: #000;
     display: inline;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
+.task-caption-detail{
+    margin-top: 15px;
+}
+
 .task-caption > h3{
     border: .5px solid #dbdbdb;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 

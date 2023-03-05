@@ -201,7 +201,6 @@ document.querySelector("#but-submit-inputing").addEventListener("click", event =
         let category = document.getElementById("form_category").value;
         let title = document.getElementById("form_title").value;
         let content = document.getElementById("form_content").value;
-
         createTask(category, title, content);
         formInput.style.display = 'none';
         document.querySelector(".whole").style.opacity = '1';
@@ -213,14 +212,20 @@ function validateFormModify(){
     if (formModify.querySelector("#form_category").value == "") {
         formModify.querySelector("#form_category").style.border = "2px solid red";
         flag = false;
+    } else {
+        formModify.querySelector("#form_category").style.border = "2px solid black";
     }
     if (formModify.querySelector("#form_title").value == "") {
         formModify.querySelector("#form_title").style.border = "2px solid red";
         flag = false;
+    } else{
+        formModify.querySelector("#form_title").style.border = "2px solid black";
     }
     if (formModify.querySelector("#form_content").value == "") {
         formModify.querySelector("#form_content").style.border = "2px solid red";
         flag = false;
+    } else{
+        formModify.querySelector("#form_content").style.border = "2px solid black";
     }
     return flag;
 }
@@ -240,13 +245,6 @@ function setModifyAndDelete(){
             let tempTask = element.parentNode.parentNode.parentNode;
             let tempTaskList = tempTask.parentNode;
             let prevStatus =tempTaskList.className;
-            if (prevStatus == "task-list-todo") {
-                formModify.querySelector("#todo").checked = true;
-            } else if (prevStatus == "task-list-doing"){
-                formModify.querySelector("#doing").checked = true;
-            } else if (prevStatus == "task-list-finished"){
-                formModify.querySelector("#finished").checked = true;
-            }      
         });
     });
     
