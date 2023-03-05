@@ -176,18 +176,37 @@ function createTask(category, title, content) {
     localStorage.setItem("listTodoTasks", JSON.stringify(listTodoTasks));
 }
 
+document.getElementById("form_category").addEventListener('input', () => {
+    if (document.getElementById("form_category").value == "") {
+        document.getElementById("form_category").style.border = "2px solid red";
+    } else {
+        document.getElementById("form_category").style.border = "2px solid black";
+    }
+});
+document.getElementById("form_title").addEventListener('input', () => {
+    if (document.getElementById("form_title").value == "") {
+        document.getElementById("form_title").style.border = "2px solid red";
+    } else {
+        document.getElementById("form_title").style.border = "2px solid black";
+    }
+});
+document.getElementById("form_content").addEventListener('input', () => {
+    if (document.getElementById("form_content").value == "") {
+        document.getElementById("form_content").style.border = "2px solid red";
+    } else {
+        document.getElementById("form_content").style.border = "2px solid black";
+    }
+});
+
 function validateFormInfo() {
     let flag = true;
     if (document.getElementById("form_category").value == "") {
-        document.getElementById("form_category").style.border = "2px solid red";
         flag = false;
     }
     if (document.getElementById("form_title").value == "") {
-        document.getElementById("form_title").style.border = "2px solid red";
         flag = false;
     }
     if (document.getElementById("form_content").value == "") {
-        document.getElementById("form_content").style.border = "2px solid red";
         flag = false;
     }
     displayForm();
