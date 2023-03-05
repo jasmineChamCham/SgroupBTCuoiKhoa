@@ -1,2 +1,0 @@
-# SgroupBTCuoiKhoa
-Todo-List
