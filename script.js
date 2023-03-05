@@ -264,6 +264,13 @@ function setModifyAndDelete(){
             let tempTask = element.parentNode.parentNode.parentNode;
             let tempTaskList = tempTask.parentNode;
             let prevStatus =tempTaskList.className;
+            if (prevStatus == "task-list-todo") {
+                formModify.querySelector("#todo").checked = true;
+            } else if (prevStatus == "task-list-doing") {
+                formModify.querySelector("#doing").checked = true;
+            } else if (prevStatus == "task-list-finished") {
+                formModify.querySelector("#finished").checked = true;
+            }             
         });
     });
     
