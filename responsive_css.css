@@ -1,0 +1,65 @@
+@media(max-width: 1090px){
+    .body{
+        margin: 10px 10px 30px 20px;
+    }
+    .whole{
+        width: 100%;
+        height: 100%;  
+    }
+    .header{
+        margin: 30px 30px;
+    }
+}
+
+@media (max-width:800px) {
+    .task-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin-left: 17px;
+    }
+    .header-slogan{
+        margin-left: 0px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .new-task{
+        border: 1px solid #dbdbdb;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .whole{
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+    }
+    .title1{
+        height: fit-content;
+        /* border: 1px solid #00A6DA; */
+    }
+    .task-list-todo{
+        max-height: 210px;
+    }
+    .task-list-doing{
+        max-height: 210px;
+    }
+    .task-list-finished{
+        max-height: 210px;
+    }
+    .title2{
+        height: fit-content;
+        /* border: 1px solid #CCAC03; */
+    }
+    .title3{
+        height: fit-content;
+        /* border: 1px solid #3BC057; */
+    }
+}

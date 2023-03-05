@@ -1,0 +1,246 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+.body{
+    margin: 10px 150px 30px 150px;
+}
+
+.whole{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;  
+}
+
+.header-slogan{
+    color: gray;
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-slogan > img{
+    width: 25px;
+    margin-left: 5px;
+}
+
+.new-task{
+    color: gray;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+
+.form-info{
+    width: 30vw;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border: 1px solid #dbdbdb;
+    display: none;
+    z-index: 999;
+    
+}
+
+.form-inputs > input{
+    width: 100%;
+    border: 1px solid #000;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.form-inputs > textarea{
+    width: 100%;
+    height: max-content;
+    border: 1px solid #000;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.form-inputs > button{
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.form-inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-close{
+    float: right;
+}
+
+.new-task > .fa-plus{
+    font-size: smaller;
+    margin-right: 4px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 20px;
+    margin: 30px 150px;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr;
+    gap: 15px;
+}
+
+.title1{
+    color: white;
+    font-size: 17px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.title1 > h2{
+    border-width: 100%;
+    border: 2px solid #00A6DA;
+    margin-top: 10px;
+}
+
+.title2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.title2 > h2{
+    border-width: 100%;
+    border: 2px solid #CCAC03;
+    margin-top: 10px;
+}
+
+.title3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.title3 > h2{
+    border-width: 100%;
+    border: 2px solid #3BC057;
+    margin-top: 10px;
+}
+
+.todo-class{
+    background-color: #00A6DA;
+}
+
+.doing-class{
+    background-color: #CCAC03;
+}
+
+.finished-class{
+    background-color: #3BC057;
+}
+
+.title-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.task{
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.task-category {
+    color: #00A6DA;
+}
+
+.task-list-todo{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 480px;
+}
+
+.task-list-doing{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 480px;
+}
+
+.task-list-finished{
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    height: 480px;
+}
+
+.task-intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task-manip{
+    color: #dbdbdb;
+}
+
+.task-caption{
+    font-weight: bold;
+    display: inline;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.task-caption > h3{
+    border: .5px solid #dbdbdb;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.task-content{
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.task-time{
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.task-time > .task-deadline{
+    margin-left: 7px;
+}
+
+.radios{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
